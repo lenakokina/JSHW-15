@@ -43,6 +43,7 @@ class Olesya extends Polina {
   constructor(options) {
     super(options)
     this.height = options.height
+    delete this.tel;
   }    
     voice() {
     console.log('I am Olesya')
@@ -57,7 +58,6 @@ const daughterSmall = new Olesya({
   name: 'Olesya',
   surname: 'Kokina',
   age: 3,
-  tel: '0951234567',
   height: 110
 })
 
